@@ -29,6 +29,8 @@
     <!-- ======== Javascripts ======== -->
     <!-- jQuery -->
     <script src="assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body class="home">
@@ -133,23 +135,16 @@
             <!-- ======== Icon navigation ======== -->
             <nav id="icon-nav">
                 <ul>
-                    <li class="responsive-trigger-wrap"><a href="#" class="circle-btn responsive-trigger">
-                        <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
-                            <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1"
-                                    fill="none"></circle>
-                        </svg>
-                        <span class="icon"></span>
-                    </a>
-                    </li>
-                    <li class="player-trigger-wrap"><a href="#show-player" class="nav-player-btn circle-btn">
-                        <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
-                            <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1"
-                                    fill="none"></circle>
-                            <circle class="circle-bg" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1"
-                                    fill="none"></circle>
-                        </svg>
-                        <span class="pe-7s-musiclist"></span>
-                    </a>
+                    <li class="player-trigger-wrap">
+                        <a data-toggle="modal" data-target="#exampleModal" class="nav-player-btn circle-btn">
+                            <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
+                                <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1"
+                                        fill="none"></circle>
+                                <circle class="circle-bg" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1"
+                                        fill="none"></circle>
+                            </svg>
+                            <span class="pe-7s-musiclist"></span>
+                        </a>
                     </li>
                     <li class="search-trigger-wrap"><a href="#" id="nav-search" class="circle-btn">
                         <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
@@ -233,7 +228,15 @@
 
 <!-- ======== Site ======== -->
 <div class="site">
-
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+         id="exampleModal" aria-hidden="true">
+        <div class="modal-dialog" style="width: 333px;">
+            <div class="modal-content" style="background-color: #aaa">
+                <iframe src="player/my_player.html" height="350" frameborder="0"></iframe>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
     <!-- ======== intro ======== -->
     <div id="intro" class="intro intro-01 intro-fullscreen clearfix">
 
@@ -1393,10 +1396,10 @@
         Avionics - Flipside
     </a>
     <!--<a href="https://soundcloud.com/wolfbeatsofficial/avionics-flipside" data-cover="images/release09.jpg"-->
-       <!--data-artist="Wolf Beats" data-artist_url="https://soundcloud.com/wolfbeatsofficial/avionics-flipside"-->
-       <!--data-artist_target="_blank" data-release_url="" data-release_target="_self" data-shop_url=""-->
-       <!--data-shop_target="_self" data-free_download="yes">-->
-        <!--Avionics - Flipside-->
+    <!--data-artist="Wolf Beats" data-artist_url="https://soundcloud.com/wolfbeatsofficial/avionics-flipside"-->
+    <!--data-artist_target="_blank" data-release_url="" data-release_target="_self" data-shop_url=""-->
+    <!--data-shop_target="_self" data-free_download="yes">-->
+    <!--Avionics - Flipside-->
     <!--</a>-->
 </div>
 <!-- /Audio Player -->
@@ -1421,12 +1424,21 @@
 
 <!-- google scripts -->
 <!--<script-->
-        <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC2qeFXhHxPO3kM2-3tiX5puGo1TkAeZk&#038;async=2&#038;ver=1.0.0"></script>-->
+<!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC2qeFXhHxPO3kM2-3tiX5puGo1TkAeZk&#038;async=2&#038;ver=1.0.0"></script>-->
 <!--<script src="assets/js/jquery.gmap.min.js"></script>-->
 
 <!-- custom scripts -->
 <script src="assets/js/scripts.js"></script>
 <script src="assets/js/custom.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
