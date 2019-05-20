@@ -202,6 +202,7 @@ header a, a:visited {
     padding-top: 15px;
     position: relative;
     width: 326px;
+    height: 170px;
     z-index: 1;
     font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
 }
